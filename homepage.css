@@ -1,0 +1,118 @@
+/* Google font  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* Base setting  */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    width: 100%;
+    height: 100vh;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.grid-container {
+    width: 100%;
+    height: 100vh;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 646px auto 444px;
+    gap: 20px;
+}
+
+/*----------------
+  Banner section
+  ---------------*/
+.banner {
+    background-color: aquamarine;
+    grid-column: 1/-1;
+    width: 90%;
+    margin: 50px auto;
+}
+
+
+/*----------------
+  Side bar section
+  ---------------*/
+.side-bar {
+    background-color: lightblue;
+    grid-column: 1/4;
+    margin-left: 70px;
+}
+
+
+/*----------------
+  Main section
+  ---------------*/
+.main-content {
+    background-color: lightgrey;
+    grid-column: 4/-1;
+    margin-right: 70px
+}
+
+
+/*----------------
+  Footer section
+  ---------------*/
+.footer {
+    background-color: lightpink;
+    grid-column: 1/-1;
+}
+
+@media only screen and (max-width: 900px) {
+    .banner {
+        background-color: aquamarine;
+        grid-column: 1/-1;
+        width: 90%;
+        margin: 50px auto;
+    }
+
+    .side-bar {
+        background-color: lightblue;
+        grid-column: 1/-1;
+    }
+
+    .main-content {
+        background-color: lightgrey;
+        grid-column: 1/-1;
+    }
+
+    .footer {
+        background-color: lightpink;
+        grid-column: 1/-1;
+        height: 345px;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    .banner {
+        background-color: aquamarine;
+        grid-column: 1/-1;
+        width: 90%;
+        margin: 50px auto;
+    }
+
+    .side-bar {
+        background-color: lightblue;
+        grid-column: 1/-1;
+    }
+
+    .main-content {
+        background-color: lightgrey;
+        grid-column: 1/-1;
+    }
+
+    .footer {
+        background-color: lightpink;
+        grid-column: 1/-1;
+        height: 412px;
+    }
+}
