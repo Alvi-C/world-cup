@@ -143,11 +143,61 @@ body {
   Main section
   ---------------*/
 .main-content {
-  background-color: lightgrey;
+  /* background-color: lightgrey; */
   grid-column: 4/-1;
+  margin-right: 30px;
+  margin-left: 20px;
 }
 
+.content-grid {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(312px, 1fr));
+  grid-template-rows: repeat(3, 1fr);
+}
 
+.transfer-card {
+  width: 312px;
+  height: 362px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  margin-bottom: 40px;
+
+}
+
+.transfer-card>img {
+  text-align: center;
+}
+
+.transfer-card>a {
+  text-decoration: none;
+  background-color: white;
+  width: 100px;
+  /* height: 24; */
+  font-size: 16px;
+  color: #161616;
+  border: 1px solid #161616;
+  justify-content: space-between;
+  border-radius: 5px;
+  padding: 4px 16px;
+  margin: 20px;
+}
+
+.transfer-card>h4 {
+  font-size: 18px;
+  margin: 0 20px;
+}
+
+.card-icon {
+  display: flex;
+  flex-direction: row;
+  width: 120px;
+  justify-content: space-between;
+  margin: 15px 20px;
+}
 
 /*----------------
   Footer section
