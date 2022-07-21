@@ -195,6 +195,26 @@ body {
   margin: 15px 20px;
 }
 
+
+/* Hidden button  */
+
+.hidden-btn {
+  display: none;
+  text-decoration: none;
+  background-color: #DD0000;
+  width: 135px;
+  height: 56;
+  font-size: 20px;
+  justify-content: space-between;
+  padding: 16px 25px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.hidden-btn a {
+  color: white;
+}
+
 /*----------------
   Footer section
   ---------------*/
@@ -355,6 +375,20 @@ footer {
     grid-template-rows: repeat(2, 1fr);
   }
 
+
+  .hidden-btn {
+    display: flex;
+    text-decoration: none;
+    background-color: #DD0000;
+    width: 135px;
+    height: 56;
+    font-size: 20px;
+    justify-content: space-between;
+    padding: 16px 25px;
+    border-radius: 5px;
+    text-align: center;
+  }
+
   .footer {
     grid-column: 1/-1;
   }
@@ -368,6 +402,7 @@ footer {
     letter-spacing: 15px;
     margin: 20px 0;
   }
+
 }
 
 
@@ -463,6 +498,19 @@ footer {
     width: 100vw;
     height: auto;
     grid-template-rows: 1fr;
+  }
+
+  .hidden-btn {
+    display: none;
+    text-decoration: none;
+    background-color: #DD0000;
+    width: 135px;
+    height: 56;
+    font-size: 20px;
+    justify-content: space-between;
+    padding: 16px 25px;
+    border-radius: 5px;
+    text-align: center;
   }
 
   .footer {
